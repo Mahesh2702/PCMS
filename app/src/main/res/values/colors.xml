@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFF</color>
+    <color name="blue">#1983B4</color>
+    <color name="black">#000</color>
+    <color name="colorDarkGrey">#a9a9a9</color>
+
+    <color name="pcmsPrmry">#3977B6</color>
+    <color name="pcmsPrmryLight">#5594d4</color>
+    <color name="pcmsGreen">#66ab16</color>
+    <color name="pcmsGreenLight">#77bf6f</color>
+    <color name="pcmsGraytext">#5a6275</color><!--Bold headers -->
+    <color name="pcmsLightGraytext">#CACBD3</color><!-- Filter Title-->
+    <color name="pcmsLightBlue">#CBCBD3</color>
+    <color name="pcmsprmryBackground">#eef0f6</color><!-- Filter Title-->
+    <color name="lightSkyBlue">#b8d3f1</color>
+    <color name="pcmsLightLightGray">#F2F2F2</color>
+    <color name="pcmsRateDefault">#FFF2F2F2</color>
+
+
+</resources>

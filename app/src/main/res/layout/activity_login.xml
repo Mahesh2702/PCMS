@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerLoginForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pcmsprmryBackground">
+    <include layout="@layout/login_app_title" />
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/edittext_rectangle"
+        android:drawableEnd="@drawable/ic_person_black_24dp"
+        android:drawableRight="@drawable/ic_person_black_24dp"
+        android:hint="@string/username"
+        android:textFontWeight="300"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/etUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_rectangle"
+        android:drawableEnd="@drawable/ic_lock_black_24dp"
+        android:drawableRight="@drawable/ic_lock_black_24dp"
+        android:hint="@string/password"
+        android:textFontWeight="300"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/login"
+        android:onClick="onLoginClick"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <include layout="@layout/app_build_footer" />
+    </RelativeLayout>
+</RelativeLayout>

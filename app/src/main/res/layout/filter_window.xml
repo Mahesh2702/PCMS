@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filter-pop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView3"-->
+    <!--            android:layout_width="360dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:text="Summary Filters" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/buttonClose"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@drawable/ic_close_black_24dp" />-->
+
+
+    <!--    </LinearLayout>-->
+
+    <include layout="@layout/filter_window_header" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center_vertical"
+        android:text="Performance"
+        android:textColor="@color/pcmsPrmryLight"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView-1-1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Group : "
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/aSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:entries="@array/group_items" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2">
+
+            <TextView
+                android:id="@+id/textView-1-2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Program : "
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/simpleSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:entries="@array/Program_items" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2">
+
+            <TextView
+                android:id="@+id/textView-1-3"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Measurement Period : "
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/simpleSpinner2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:entries="@array/period_items" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2">
+
+            <TextView
+                android:id="@+id/textView-1-4"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Measurement Interval : "
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/simpleSpinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:entries="@array/interval_items" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="2">
+
+            <TextView
+                android:id="@+id/textView-1-5"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Line Of Business : "
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/simpleSpinner4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:entries="@array/lob_items" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <include layout="@layout/filter_window_footer" />
+</LinearLayout>

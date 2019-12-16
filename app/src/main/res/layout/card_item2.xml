@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/custom_id_text_card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/pcmsGraytext"
+                android:fontFamily="@font/open_sans"
+                android:text="Name"
+                android:textSize="14sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageButton
+                android:id="@+id/custom_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_group_black_24dp"
+                android:gravity="end"></ImageButton>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/earnedTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Earned"
+                    android:textColor="@color/pcmsLightGraytext"
+                    android:textStyle="normal"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/minEarnedPercentTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00% / "
+                        android:textColor="@color/pcmsPrmryLight"
+                        android:textStyle="normal"></TextView>
+
+                    <TextView
+                        android:id="@+id/maxEarnedPercentTotalTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00%"
+                        android:textStyle="normal"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"
+                    android:textColor="@color/pcmsLightGraytext"
+                    android:fontFamily="@font/open_sans"
+                    android:textStyle="normal"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ratePercentTotalTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00%"
+                        android:textColor="@color/pcmsGraytext"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/serviceTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:textColor="@color/pcmsLightGraytext"
+                    android:fontFamily="@font/open_sans"
+                    android:textStyle="normal"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/minServicePercentTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="132/ "
+                        android:textColor="@color/pcmsGraytext"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/maxServicePercentTotalTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="175"
+                        android:textColor="@color/pcmsLightGraytext"
+                        android:fontFamily="@font/open_sans"
+                        android:textStyle="normal"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rating1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:lines="4"
+                android:text="1 Star\n0.00%\n0.00%"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:background="@color/pcmsRateDefault"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rating2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:lines="4"
+                android:text="2 Star\n55.00%\n0.00%"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:background="@color/pcmsRateDefault"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/rating3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:lines="4"
+                android:text="3 Star\n36.00%\n0.00%\n7"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:background="@color/pcmsRateDefault"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rating4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/open_sans"
+                android:layout_weight="1"
+                android:lines="4"
+                android:text="4 Star\n72.00%\n4.93%\n20"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:background="@color/pcmsRateDefault"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rating5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/open_sans"
+                android:layout_weight="1"
+                android:lines="4"
+                android:text="5 Star\n79.00%\n1.97%\n16"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:background="@color/pcmsRateDefault"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+</LinearLayout>
